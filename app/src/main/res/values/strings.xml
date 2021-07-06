@@ -1,0 +1,54 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Bluethooth-based-audio-streaming-and-chating-app</string>
+    <string name="home">Home</string>
+    <string name="developers">Developers</string>
+    <string name="about_us">About Us</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_us">Rate Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hints">Hints</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chat_fragment">Chat Fragment</string>
+    <string name="audio_fragment">Audio Fragment</string>
+    <string name="chat_navigation">Chat Navigation</string>
+    <string name="personal_profile">Personal Profile</string>
+    <string name="search">Search</string>
+    <string name="stream_fragment">Stream Fragment</string>
+    <string name="chat">Chat</string>
+    <string name="audio">Audio</string>
+    <string name="stream">Stream</string>
+    <string name="profile">Profile</string>
+    <string name="user_name">User Name</string>
+    <string name="user_id">User ID</string>
+    <string name="connection_status">Connection status</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_connecting">connecting…</string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices…</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="none_found">No devices found</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <string name="connect_device">Connect a device</string>
+    <string name="paired_devices_action_button">paired devices button</string>
+    <string name="Device_Name">name</string>
+    <string name="Device_Address">address</string>
+    <string name="Device_last_Connection_date">2020/01/01</string>
+    <string name="there_is_no_chat">There Is No Chats Yet.</string>
+
+    <string name="send_your_first_message">Send Your First Message.</string>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/home_icon"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/menuHints"
+        android:icon="@drawable/hints_icon"
+        android:title="@string/hints"/>
+    <item
+        android:id="@+id/menuDeveloper"
+        android:icon="@drawable/developer_icon"
+        android:title="@string/developers"/>
+    <item
+        android:id="@+id/menuAboutUs"
+        android:icon="@drawable/aboutus_icon"
+        android:title="@string/about_us"/>
+<!--    <item-->
+<!--        android:id="@+id/menuSettings"-->
+<!--        android:icon="@drawable/settings_icon"-->
+<!--        android:title="@string/settings"/>-->
+    <item
+        android:id="@+id/menuFeedback"
+        android:icon="@drawable/feedback_icon"
+        android:title="@string/feedback"/>
+    <item
+        android:id="@+id/menuRateUs"
+        android:icon="@drawable/rateus_icon"
+        android:title="@string/rate_us"/>
+</menu>

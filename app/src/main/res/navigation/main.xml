@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/chatListFragment">
+    <fragment
+        android:id="@+id/menuHome"
+        android:name="co.kit.gfg.chatapp.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/menuHints"
+        android:name="co.kit.gfg.chatapp.HintsFragment"
+        android:label="@string/hints"
+        tools:layout="@layout/fragment_hints" />
+    <fragment
+        android:id="@+id/menuDeveloper"
+        android:name="co.kit.gfg.chatapp.DevelopersFragment"
+        android:label="@string/developers"
+        tools:layout="@layout/fragment_developers" />
+    <fragment
+        android:id="@+id/menuAboutUs"
+        android:name="co.kit.gfg.chatapp.AboutFragment"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/menuSettings"
+        android:name="co.kit.gfg.chatapp.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/menuFeedback"
+        android:name="co.kit.gfg.chatapp.FeedbackFragment"
+        android:label="@string/feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/menuRateUs"
+        android:name="co.kit.gfg.chatapp.RateUsFragment"
+        android:label="@string/rate_us"
+        tools:layout="@layout/fragment_rate_us" />
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="co.kit.gfg.chatapp.AudioFragment"
+        android:label="Listen Audio"
+        tools:layout="@layout/fragment_audio" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="co.kit.gfg.chatapp.SearchFragment"
+        android:label="Search Connections"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/streamFragment"
+        android:name="co.kit.gfg.chatapp.StreamFragment"
+        android:label="Stream Audio"
+        tools:layout="@layout/fragment_stream" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="co.kit.gfg.chatapp.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="co.kit.gfg.chatapp.ChatListFragment"
+        android:label="fragment_chat_list"
+        tools:layout="@layout/fragment_chat_list" >
+        <action
+            android:id="@+id/action_chatListFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pairedDeviceFragment"
+        android:name="co.kit.gfg.chatapp.PairedDeviceFragment"
+        android:label="fragment_paired_device"
+        tools:layout="@layout/fragment_paired_device" >
+        <action
+            android:id="@+id/action_pairedDeviceFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="co.kit.gfg.chatapp.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+</navigation>

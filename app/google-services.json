@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "173787965136",
+    "firebase_url": "https://ble-audio-default-rtdb.firebaseio.com",
+    "project_id": "ble-audio",
+    "storage_bucket": "ble-audio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173787965136:android:04958f8135c2ddfbd860d5",
+        "android_client_info": {
+          "package_name": "co.kit.gfg.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173787965136-k938t5mf5l4gg9bg9uknlq87oh66rauu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.kit.gfg.chatapp",
+            "certificate_hash": "2f4e92bd89bf3b187d71567b0fb38a3f1bbcc766"
+          }
+        },
+        {
+          "client_id": "173787965136-qqnkka64o7l4k4o5gh5mrm9124lvnpnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU7tJWslQ-aLmkFsZeMPCd3FAQJ92t6IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173787965136-qqnkka64o7l4k4o5gh5mrm9124lvnpnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

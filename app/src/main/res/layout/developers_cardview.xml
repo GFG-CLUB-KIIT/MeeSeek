@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="18dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--ImageVIew to display our Developer's Image-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/DeveloperImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:contentDescription="Developer Photo"
+            android:padding="5dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Image.PILL"
+            android:src="@drawable/ic_baseline_adb_24" />
+
+        <!--Text View to display Developer's Name-->
+        <TextView
+            android:id="@+id/DeveloperName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/DeveloperImage"
+            android:text="Full Name"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DeveloperEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DeveloperName"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/DeveloperImage"
+            android:drawablePadding="2dp"
+            android:text="Position 1 | Position 2" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

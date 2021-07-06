@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chatListFragment"
+        android:title="@string/chat"
+        android:icon="@drawable/ic_chat"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/audioFragment"-->
+<!--        android:title="@string/audio"-->
+<!--        android:icon="@drawable/ic_audio"-->
+<!--        />-->
+
+    <item
+        android:id="@+id/searchFragment"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"
+        />
+<!--    <item-->
+<!--        android:id="@+id/streamFragment"-->
+<!--        android:title="@string/stream"-->
+<!--        android:icon="@drawable/ic_stream"-->
+<!--        />-->
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile"
+        />
+
+</menu>
