@@ -117,7 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/reg_bluetooth_name"
-                    android:background="@color/white"
+                    android:background="#0000ffff"
                     android:drawableStart="@drawable/ic_audio"
                     android:drawablePadding="6dp"
                     android:hint="Bluetooth name"/>
@@ -133,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/reg_username"
-                    android:background="@color/white"
+                    android:background="#0000ffff"
                     android:drawableStart="@drawable/ic_email"
                     android:drawablePadding="6dp"
                     android:hint="Username"
@@ -154,7 +154,7 @@
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_lock"
                     android:drawablePadding="6dp"
-                    android:background="@color/white"
+                    android:background="#0000ffff"
                     android:hint="Password"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>

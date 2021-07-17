@@ -25,10 +25,10 @@
         android:label="@string/about_us"
         tools:layout="@layout/fragment_about" />
     <fragment
-        android:id="@+id/menuSettings"
-        android:name="co.kit.gfg.chatapp.SettingsFragment"
-        android:label="@string/settings"
-        tools:layout="@layout/fragment_settings" />
+        android:id="@+id/menuLogout"
+        android:name="co.kit.gfg.chatapp.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
     <fragment
         android:id="@+id/menuFeedback"
         android:name="co.kit.gfg.chatapp.FeedbackFragment"

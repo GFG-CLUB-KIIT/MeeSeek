@@ -2,53 +2,55 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginLeft="11dp"
     android:layout_marginRight="11dp"
     android:layout_marginTop="11dp"
     android:layout_marginBottom="15dp"
     android:background="@drawable/background_bases_model">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/phone_icon"
 
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:lottie_rawRes="@raw/phone_icon"
+        app:lottie_autoPlay="true"
+
+        android:background="@color/black"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true"/>
     <TextView
         android:id="@+id/txt_modelPairedDev_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="2dp"
         android:maxLines="1"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="15dp"
-        android:ellipsize="end"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_marginTop="2dp"
-        android:textSize="16sp"
+        android:layout_marginStart="25dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
+
+        app:layout_constraintStart_toEndOf="@id/phone_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
         android:text="@string/Device_Name" />
 
     <TextView
         android:id="@+id/txt_modelPairedD_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="15dp"
-        android:layout_below="@+id/txt_modelPairedDev_name"
-        android:gravity="center"
-        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+         android:gravity="center"
         android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:text="@string/Device_Address"/>
 
-    <TextView
-        android:id="@+id/txt_modelPairedD_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="15dp"
-        android:layout_below="@+id/txt_modelPairedDev_name"
-        android:layout_alignParentEnd="true"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:text="@string/Device_last_Connection_date"/>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </RelativeLayout>
