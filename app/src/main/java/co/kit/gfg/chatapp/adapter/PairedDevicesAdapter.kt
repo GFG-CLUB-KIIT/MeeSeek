@@ -66,10 +66,9 @@ class PairedDevicesAdapter(private val interaction: Interaction? = null) :
             }
             val deviceName = itemView.findViewById<TextView>(R.id.txt_modelPairedDev_name)
             val deviceAddress = itemView.findViewById<TextView>(R.id.txt_modelPairedD_address)
-            val date = itemView.findViewById<TextView>(R.id.txt_modelPairedD_date)
             deviceAddress.text = item.deviceAddress
             deviceName.text = item.deviceName
-            date.text = item.date ?: ""
+
         }
     }
 

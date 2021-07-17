@@ -6,6 +6,8 @@
     <string name="settings">Settings</string>
     <string name="feedback">Feedback</string>
     <string name="rate_us">Rate Us</string>
+    <string name="logout">Logout</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hints">Hints</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -21,7 +23,7 @@
     <string name="profile">Profile</string>
     <string name="user_name">User Name</string>
     <string name="user_id">User ID</string>
-    <string name="connection_status">Connection status</string>
+    <string name="connection_status">Connection status :</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

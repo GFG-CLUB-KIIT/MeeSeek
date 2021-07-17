@@ -1,5 +1,7 @@
 package co.kit.gfg.chatapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -58,7 +60,15 @@ public class RateUsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        /**APP's PLAYSTORE LINK*/
+        String link = "https://play.google.com/store/apps/details?id=com.kattwinkel.android.soundseeder.player&hl=en_IN&gl=US";
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rate_us, container, false);
+        View view=inflater.inflate(R.layout.fragment_rate_us, container, false);
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(link));
+        startActivity(intent);
+
+        return view;
     }
 }

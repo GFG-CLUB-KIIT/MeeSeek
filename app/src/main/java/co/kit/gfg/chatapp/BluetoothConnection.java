@@ -116,7 +116,7 @@ public class BluetoothConnection extends AppCompatActivity {
                     message.what=STATE_CONNECTED;
                     handler.sendMessage(message);
                     UserInformation.connectionStatus="CONNECTED";
-                    //Launch the individual chat fragment or Audio fragment from here
+                    //Launch the individual chat fragment or Audio fragment from here from here
 
 
                     break;

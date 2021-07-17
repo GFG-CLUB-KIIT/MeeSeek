@@ -34,12 +34,12 @@ public class DevelopersFragment extends Fragment implements DevClickHandler {
         developerRecyclerView = developerFragment.findViewById(R.id.developers_recyclerView);
 
         ArrayList<DeveloperModel> developerModelArrayList = new ArrayList<>();
-        developerModelArrayList.add(new DeveloperModel("Abhishek Dutt", "Position", R.drawable.ic_baseline_adb_24));
-        developerModelArrayList.add(new DeveloperModel("Abhishek Samantaray", "Position", R.drawable.ic_baseline_adb_24));
-        developerModelArrayList.add(new DeveloperModel("Nitish Kumar Sonthalia", "Position", R.drawable.ic_baseline_adb_24));
-        developerModelArrayList.add(new DeveloperModel("Shishir Sharma", "Position", R.drawable.ic_baseline_adb_24));
-        developerModelArrayList.add(new DeveloperModel("Shivam Srivastava", "Android Developer", R.drawable.developer_shivam));
-        developerModelArrayList.add(new DeveloperModel("Sivnarayan Pal", "Position", R.drawable.ic_baseline_adb_24));
+        developerModelArrayList.add(new DeveloperModel("Nitish Kumar Sonthalia", "Get to know more", R.drawable.nitish));
+        developerModelArrayList.add(new DeveloperModel("Shishir Sharma", "Get to know more", R.drawable.shishir));
+        developerModelArrayList.add(new DeveloperModel("Abhishek Samantaray", "Get to know more", R.drawable.abhishek));
+        developerModelArrayList.add(new DeveloperModel("Shivam Srivastava", "Get to know more", R.drawable.developer_shivam));
+        developerModelArrayList.add(new DeveloperModel("Abhishek Dutt", "Get to know more", R.drawable.abhishekdutt));
+        developerModelArrayList.add(new DeveloperModel("Sivnarayan Pal", "Get to know more", R.drawable.siv));
 
         DevelopersAdapter developersAdapter = new DevelopersAdapter(developerModelArrayList, getContext(), this);
         developerRecyclerView.setAdapter(developersAdapter);
@@ -54,42 +54,42 @@ public class DevelopersFragment extends Fragment implements DevClickHandler {
     public void OnClick(int position) {
         switch (position) {
                         case 0:
-                            String link0 = "https://kiit.ac.in/";
+                            String link0 = "https://www.linkedin.com/in/nitish-kumar-sonthalia-4713a8193/";
                             Intent intent0 = new Intent(Intent.ACTION_VIEW);
                             intent0.setData(Uri.parse(link0));
                             startActivity(intent0);
                             break;
 
                         case 1:
-                            String link1 = "https://google.co.in/";
+                            String link1 = "https://www.linkedin.com/in/shishir-sharma2001/";
                             Intent intent1 = new Intent(Intent.ACTION_VIEW);
                             intent1.setData(Uri.parse(link1));
                             startActivity(intent1);
                             break;
 
                         case 2:
-                            String link2 = "https://facebook.com/";
+                            String link2 = "https://www.linkedin.com/in/abhisek-samantaray-989555195/v";
                             Intent intent2 = new Intent(Intent.ACTION_VIEW);
                             intent2.setData(Uri.parse(link2));
                             startActivity(intent2);
                             break;
 
                         case 3:
-                            String link3 = "https://youtube.com/";
+                            String link3 = "https://www.linkedin.com/in/shivam-0/";
                             Intent intent3 = new Intent(Intent.ACTION_VIEW);
                             intent3.setData(Uri.parse(link3));
                             startActivity(intent3);
                             break;
 
                         case 4:
-                            String link4 = "https://www.linkedin.com/in/shivam-0/";
+                            String link4 = "https://www.linkedin.com/in/duttabhishek0";
                             Intent intent4 = new Intent(Intent.ACTION_VIEW);
                             intent4.setData(Uri.parse(link4));
                             startActivity(intent4);
                             break;
 
                         case 5:
-                            String link5 = "https://linkedin.com/";
+                            String link5 = "https://www.linkedin.com/in/sivnarayan-pal-806a7a211/";
                             Intent intent5 = new Intent(Intent.ACTION_VIEW);
                             intent5.setData(Uri.parse(link5));
                             startActivity(intent5);
