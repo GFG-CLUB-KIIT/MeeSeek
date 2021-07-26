@@ -72,6 +72,7 @@ class SearchFragment : Fragment(), PairedDeviceFragment.OnClick {
                 startActivityForResult(enableIntent, REQUEST_ENABLE_BT)
                 Toast.makeText(context, "Successful", Toast.LENGTH_SHORT).show()
 
+
             }
 
 

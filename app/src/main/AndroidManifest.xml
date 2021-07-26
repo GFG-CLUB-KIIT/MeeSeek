@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bluethoothbasedaudiostreamingandchatingapp">
-        <activity android:name=".sample1"></activity>
+
         <activity
             android:name=".Splash"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">

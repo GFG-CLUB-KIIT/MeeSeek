@@ -11,20 +11,27 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
+
 //        handler= DatabaseHelper(this)
             val handler= DatabaseHelper(this)
 
 
 
-        btnLogRegister.setOnClickListener {
-            onBackPressed()
-        }
-        reg_button.setOnClickListener{
-            handler.insertUserData(reg_bluetooth_name.text.toString(),reg_username.text.toString(),reg_password.text.toString())
+
+        RegisterButton.setOnClickListener{
+            handler.insertUserData(register_bluetooth_name.text.toString(),register_Username.text.toString(),register_password.text.toString())
                 Toast.makeText(this,"Values Inserted", Toast.LENGTH_LONG).show()
                 onBackPressed()
 
         }
+        constraintRegisterLayout.setOnTouchListener(object:OnSwipeTouchListener(this@RegisterActivity){
+            override fun onSwipeRight() {
+                super.onSwipeRight()
+                val intent=Intent(applicationContext,LoginActivity::class.java)
+                startActivity(intent)
+            }
+
+        })
     }
 
     override fun onBackPressed() {
