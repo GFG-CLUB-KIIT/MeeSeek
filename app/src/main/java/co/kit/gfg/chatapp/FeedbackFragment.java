@@ -1,5 +1,7 @@
 package co.kit.gfg.chatapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -25,6 +27,9 @@ public class FeedbackFragment extends Fragment {
     Button submit_button;
     FirebaseDatabase feedback_data;
     DatabaseReference reference;
+    boolean rate_done = false;
+    String myUrl ="https://play.google.com/store/apps/details?id=com.kattwinkel.android.soundseeder.player&hl=en_IN&gl=US";
+
 
     // Declaring variables to store data for slider and EditText
     float value_ui, value_performance, value_build, value_connectivity, value_overall_experience;
@@ -38,6 +43,13 @@ public class FeedbackFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Uri uri = Uri.parse(myUrl);
+//        if(!rate_done) {
+//            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//            startActivity(intent);
+//            rate_done = true;
+//        }
+
         // Inflate the layout for this fragment
         View myFragment =  inflater.inflate(R.layout.fragment_feedback, container, false);
 
@@ -51,6 +63,8 @@ public class FeedbackFragment extends Fragment {
         email = myFragment.findViewById(R.id.editText_EmailAddress);
         suggestions = myFragment.findViewById(R.id.editText_Suggestions);
         submit_button = myFragment.findViewById(R.id.submit_button);
+
+
 
         submit_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,8 +91,13 @@ public class FeedbackFragment extends Fragment {
                         add_to_firebase(value_name, value_email, value_suggestions, value_ui, value_performance,
                                 value_build, value_connectivity, value_overall_experience);
                     }
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+                rate_done = true;
+
             }
         });
+
 
         return myFragment;
     }

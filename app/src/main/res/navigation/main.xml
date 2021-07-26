@@ -19,11 +19,11 @@
         android:name="co.kit.gfg.chatapp.DevelopersFragment"
         android:label="@string/developers"
         tools:layout="@layout/fragment_developers" />
-    <fragment
-        android:id="@+id/menuAboutUs"
-        android:name="co.kit.gfg.chatapp.AboutFragment"
-        android:label="@string/about_us"
-        tools:layout="@layout/fragment_about" />
+<!--    <fragment-->
+<!--        android:id="@+id/menuAboutUs"-->
+<!--        android:name="co.kit.gfg.chatapp.AboutFragment"-->
+<!--        android:label="@string/about_us"-->
+<!--        tools:layout="@layout/fragment_about" />-->
     <fragment
         android:id="@+id/menuLogout"
         android:name="co.kit.gfg.chatapp.LogoutFragment"
@@ -34,11 +34,11 @@
         android:name="co.kit.gfg.chatapp.FeedbackFragment"
         android:label="@string/feedback"
         tools:layout="@layout/fragment_feedback" />
-    <fragment
-        android:id="@+id/menuRateUs"
-        android:name="co.kit.gfg.chatapp.RateUsFragment"
-        android:label="@string/rate_us"
-        tools:layout="@layout/fragment_rate_us" />
+<!--    <fragment-->
+<!--        android:id="@+id/menuRateUs"-->
+<!--        android:name="co.kit.gfg.chatapp.RateUsFragment"-->
+<!--        android:label="@string/rate_us"-->
+<!--        tools:layout="@layout/fragment_rate_us" />-->
     <fragment
         android:id="@+id/audioFragment"
         android:name="co.kit.gfg.chatapp.AudioFragment"
