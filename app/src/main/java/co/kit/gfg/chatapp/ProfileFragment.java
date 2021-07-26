@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import co.kit.gfg.chatapp.data.UserInformation;
@@ -19,6 +20,8 @@ import co.kit.gfg.chatapp.data.UserInformation;
 public class ProfileFragment extends Fragment {
     TextView user_profile_name;
     TextView user_connection_status;
+    TextView user_username;
+    Button update_password;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -67,18 +70,35 @@ public class ProfileFragment extends Fragment {
 
 
         //Setting the User Profile Username and BluetoothName
-        user_profile_name=view.findViewById(R.id.user_profile_name);
-
-
-
+        user_profile_name=view.findViewById(R.id.user_bluetooth_name);
+        user_username=view.findViewById(R.id.user_user_name);
         user_connection_status=view.findViewById(R.id.user_connection_status);
+        update_password=view.findViewById(R.id.UpdatePasswordButton);
 
+        /*User details*/
         user_profile_name.setText(UserInfo.BluetoothName(requireContext()));
+        user_username.setText(UserInfo.Username(requireContext()));
+
+        /*Connection details*/
         if(UserInformation.connectionStatus!=null)
         user_connection_status.setText(UserInformation.connectionStatus);
         else
             user_connection_status.setText("NOT CONNECTED");
+
+        /*Update Password*/
+        update_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
+
         return view;
 
+    }
+
+    private void openDialog() {
+        UpdatePasswordDialog updatePasswordDialog=new UpdatePasswordDialog();
+        updatePasswordDialog.show(getParentFragmentManager(),"Update Password");
     }
 }
