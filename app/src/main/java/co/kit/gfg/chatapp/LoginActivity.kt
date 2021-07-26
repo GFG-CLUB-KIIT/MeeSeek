@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import co.kit.gfg.chatapp.data.PairedDeviceData
 import co.kit.gfg.chatapp.data.UserInformation
 
@@ -16,7 +17,6 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
     lateinit var handler: DatabaseHelper
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,17 +29,13 @@ class LoginActivity : AppCompatActivity() {
 
         //Switching to Registration
 
-        btnRegLogin.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
-        }
-
 
         //Login click
-        log_button.setOnClickListener{
-            if(handler.userPresent(log_bluetooth_name.text.toString(),log_username.text.toString(),log_password.text.toString()))
+        LoginButton.setOnClickListener{
+            if(handler.userPresent(login_bluetooth_name.text.toString(),login_Username.text.toString(),login_password.text.toString()))
             {       /*Saving the Login Data*/
 
-                    UserInfo.saveDetails(applicationContext,log_bluetooth_name.text.toString(),log_username.text.toString())
+                    UserInfo.saveDetails(applicationContext,login_bluetooth_name.text.toString(),login_Username.text.toString(),login_password.text.toString())
 
                 //start the activity
                 val intent=Intent(this, MainActivity::class.java)
@@ -51,6 +47,14 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this,"Invalid inputs", Toast.LENGTH_LONG).show()
             }
         }
+        constraintLoginLayout.setOnTouchListener(object:OnSwipeTouchListener(this@LoginActivity)
+        {
+            override fun onSwipeLeft() {
+                super.onSwipeLeft()
+                val intent=Intent(applicationContext,RegisterActivity::class.java)
+                startActivity(intent)
+            }
+        })
 
     }
 

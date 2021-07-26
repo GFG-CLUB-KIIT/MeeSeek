@@ -12,14 +12,16 @@ public class UserInfo {
     private static final String MY_PREFERENCE_NAME = "co.kit.gfg.chatapp";
     private static final String MY_USERNAME = "my_username";
     private static final String MY_BLUETOOTH_NAME = "my_bluetooth_name";
+    private static final String MY_PASSWORD = "my_password";
     private static final String is_Logged_In="logged";
 
-    public static void saveDetails(Context context, String bluetootName, String userName)
+    public static void saveDetails(Context context, String bluetoothName, String userName,String password)
     {
         SharedPreferences sharedPreferences=context.getSharedPreferences(MY_PREFERENCE_NAME,Context.MODE_PRIVATE);
         Editor sharedPreferencesEditor=sharedPreferences.edit();
-        sharedPreferencesEditor.putString(MY_BLUETOOTH_NAME,bluetootName);
+        sharedPreferencesEditor.putString(MY_BLUETOOTH_NAME,bluetoothName);
         sharedPreferencesEditor.putString(MY_USERNAME,userName);
+        sharedPreferencesEditor.putString(MY_PASSWORD,password);
         sharedPreferencesEditor.putBoolean(is_Logged_In,true);
         sharedPreferencesEditor.apply();
 
@@ -52,11 +54,22 @@ public class UserInfo {
         Intent intent = new Intent(context,LoginActivity.class);
         context.startActivity(intent);
 
+     }
 
-
-
+    public static String CurrentPassword(Context context)
+    {
+        SharedPreferences sharedPreferences= context.getSharedPreferences(MY_PREFERENCE_NAME,Context.MODE_PRIVATE);
+        return sharedPreferences.getString(MY_PASSWORD,null);
     }
+    public static void UpdatePassword(Context context,String newPassword)
+    {
+        SharedPreferences sharedPreferences=context.getSharedPreferences(MY_PREFERENCE_NAME,Context.MODE_PRIVATE);
+        Editor sharedPreferencesEditor=sharedPreferences.edit();
 
+        sharedPreferencesEditor.putString(MY_PASSWORD,newPassword);
+
+        sharedPreferencesEditor.apply();
+    }
 
 
 }

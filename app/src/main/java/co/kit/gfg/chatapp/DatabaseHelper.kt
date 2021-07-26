@@ -6,6 +6,7 @@ import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.provider.ContactsContract
+import android.util.Log
 import androidx.core.content.ContextCompat.startActivity
 
 class DatabaseHelper(context: Context):SQLiteOpenHelper(context,dbname,factory, version) {
@@ -56,5 +57,12 @@ class DatabaseHelper(context: Context):SQLiteOpenHelper(context,dbname,factory, 
         cursor.close()
         return true
 
+    }
+    fun deleteRow(bluetoothName:String,userName: String,Password: String)
+    {
+        val db:SQLiteDatabase=writableDatabase
+        db.execSQL("delete from userDB where bluetoothname='$bluetoothName' and username='$userName' and password='$Password'")
+        Log.d("Database","Row Deleted from Database")
+        db.close()
     }
 }
