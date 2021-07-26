@@ -9,26 +9,26 @@
         android:id="@+id/menuHints"
         android:icon="@drawable/hints_icon"
         android:title="@string/hints"/>
+
+    <!--Merged Developers and About Us fragment-->
     <item
         android:id="@+id/menuDeveloper"
         android:icon="@drawable/developer_icon"
-        android:title="@string/developers"/>
-    <item
-        android:id="@+id/menuAboutUs"
-        android:icon="@drawable/aboutus_icon"
-        android:title="@string/about_us"/>
+        android:title="@string/about"/>
 <!--    <item-->
 <!--        android:id="@+id/menuSettings"-->
 <!--        android:icon="@drawable/settings_icon"-->
 <!--        android:title="@string/settings"/>-->
+
+    <!--Merged Rate us and Feedback Fragment-->
     <item
         android:id="@+id/menuFeedback"
         android:icon="@drawable/feedback_icon"
         android:title="@string/feedback"/>
-    <item
-        android:id="@+id/menuRateUs"
-        android:icon="@drawable/rateus_icon"
-        android:title="@string/rate_us"/>
+<!--    <item-->
+<!--        android:id="@+id/menuRateUs"-->
+<!--        android:icon="@drawable/rateus_icon"-->
+<!--        android:title="@string/rate_us"/>-->
     <item
         android:id="@+id/menuLogout"
         android:icon="@drawable/ic_logout"

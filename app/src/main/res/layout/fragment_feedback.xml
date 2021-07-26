@@ -226,7 +226,6 @@
                 android:hint="Suggestions"
                 android:layout_margin="8dp"
                 android:inputType="textMultiLine" />
-
             <Button
                 android:id="@+id/submit_button"
                 android:layout_width="wrap_content"
@@ -234,6 +233,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="24dp"
                 android:text="SUBMIT" />
+
 
         </LinearLayout>
     </ScrollView>
