@@ -9,6 +9,8 @@
         android:id="@+id/menuHints"
         android:icon="@drawable/hints_icon"
         android:title="@string/hints"/>
+
+    <!--Merged Developers and About Us fragment-->
     <item
         android:id="@+id/menuDeveloper"
         android:icon="@drawable/developer_icon"
@@ -17,6 +19,8 @@
 <!--        android:id="@+id/menuSettings"-->
 <!--        android:icon="@drawable/settings_icon"-->
 <!--        android:title="@string/settings"/>-->
+
+    <!--Merged Rate us and Feedback Fragment-->
     <item
         android:id="@+id/menuFeedback"
         android:icon="@drawable/feedback_icon"
