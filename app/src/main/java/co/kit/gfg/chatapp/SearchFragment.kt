@@ -43,8 +43,7 @@ class SearchFragment : Fragment(), PairedDeviceFragment.OnClick {
         val viewOfLayout = inflater.inflate(R.layout.fragment_search, container, false)
 
         //val bluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
-        val bluetooth_animation =
-            viewOfLayout.findViewById<com.airbnb.lottie.LottieAnimationView>(R.id.bluetooth_animation)
+
         if (bluetoothAdapter == null) {
             Toast.makeText(context, "Device does not support Bluetooth", Toast.LENGTH_LONG).show()
         } else {
