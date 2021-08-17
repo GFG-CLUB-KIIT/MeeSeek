@@ -1,5 +1,6 @@
 package co.kit.gfg.chatapp.adapter
 
+import android.graphics.Color
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -73,6 +74,7 @@ class ChatAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             item.content().apply {
                 if (isMe) {
                     state.visibility = View.VISIBLE
+                    message.setTextColor(Color.parseColor("#ffffff"))
                     (relativeLayout.layoutParams as FrameLayout.LayoutParams).gravity = Gravity.END
                     relativeLayout.background =
                         ResourcesCompat.getDrawable(resources, R.drawable.chat_message_host, null)

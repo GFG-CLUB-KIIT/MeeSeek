@@ -32,7 +32,7 @@
         android:layout_marginStart="25dp"
         android:textSize="20sp"
         android:textColor="@color/black"
-
+        android:fontFamily="@font/poppins_semibold"
         app:layout_constraintStart_toEndOf="@id/phone_icon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

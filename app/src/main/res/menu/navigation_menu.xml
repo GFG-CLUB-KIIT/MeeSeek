@@ -1,34 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-<!--    <item-->
-<!--        android:id="@+id/menuHome"-->
-<!--        android:icon="@drawable/home_icon"-->
-<!--        android:title="@string/home" />-->
     <item
         android:id="@+id/menuHints"
-        android:icon="@drawable/hints_icon"
+        android:icon="@drawable/ic_hints"
         android:title="@string/hints"/>
-
-    <!--Merged Developers and About Us fragment-->
     <item
         android:id="@+id/menuDeveloper"
-        android:icon="@drawable/developer_icon"
+        android:icon="@drawable/ic_about_us"
         android:title="@string/about"/>
-<!--    <item-->
-<!--        android:id="@+id/menuSettings"-->
-<!--        android:icon="@drawable/settings_icon"-->
-<!--        android:title="@string/settings"/>-->
-
-    <!--Merged Rate us and Feedback Fragment-->
     <item
         android:id="@+id/menuFeedback"
-        android:icon="@drawable/feedback_icon"
+        android:icon="@drawable/ic_feedback"
         android:title="@string/feedback"/>
-<!--    <item-->
-<!--        android:id="@+id/menuRateUs"-->
-<!--        android:icon="@drawable/rateus_icon"-->
-<!--        android:title="@string/rate_us"/>-->
     <item
         android:id="@+id/menuLogout"
         android:icon="@drawable/ic_logout"

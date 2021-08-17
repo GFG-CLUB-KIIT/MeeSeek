@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/authenticationbackground"
-    tools:context=".RegisterActivity">
+    tools:context=".ui.acitivity.RegisterActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,40 +18,46 @@
 
         android:background="@drawable/userauthenticationlayout"
         android:layout_marginTop="150dp">
+
         <TextView
             android:id="@+id/RegisterTextview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Register"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:textColor="#5B37B7"
             android:textSize="30sp"
-
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/RegisterBluetoothTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bluetooth Name"
             android:layout_marginStart="60dp"
             android:layout_marginTop="60dp"
-            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:text="Bluetooth Name"
             android:textColor="#5B37B7"
+            android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/RegisterTextview"/>
+            app:layout_constraintTop_toBottomOf="@id/RegisterTextview" />
+
         <AutoCompleteTextView
             android:id="@+id/register_bluetooth_name"
             android:layout_width="match_parent"
-            android:maxLines="1"
-            android:backgroundTint="#5B37B7"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:backgroundTint="#5B37B7"
+            android:fontFamily="@font/poppins"
+            android:maxLines="1"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RegisterBluetoothTextView" />
 
 
@@ -59,13 +65,15 @@
             android:id="@+id/RegisterUsernameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#5B37B7"
-            android:text="Username"
             android:layout_marginStart="60dp"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins"
+            android:text="Username"
+            android:textColor="#5B37B7"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/register_bluetooth_name"/>
+            app:layout_constraintTop_toBottomOf="@id/register_bluetooth_name" />
+
         <AutoCompleteTextView
             android:id="@+id/register_Username"
             android:layout_width="match_parent"
@@ -73,20 +81,24 @@
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="#5B37B7"
-            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/poppins"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RegisterUsernameTextView" />
+
         <TextView
             android:id="@+id/registerPasswordTextview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#5B37B7"
-            android:text="Password"
             android:layout_marginStart="60dp"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins"
+            android:text="Password"
+            android:textColor="#5B37B7"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/register_Username"/>
+            app:layout_constraintTop_toBottomOf="@id/register_Username" />
+
         <AutoCompleteTextView
             android:id="@+id/register_password"
             android:layout_width="match_parent"
@@ -94,8 +106,9 @@
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="#5B37B7"
-            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/poppins"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/registerPasswordTextview" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -103,22 +116,25 @@
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/login_btn_bg"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Register"
             android:textColor="@color/white"
-            android:background="@drawable/login_btn_bg"
-            app:layout_constraintTop_toBottomOf="@id/register_password"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/register_password" />
+
         <TextView
             android:id="@+id/SwipeLeftToLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
             android:text="Swipe Right to Login"
             android:textColor="#5B37B7"
-            android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@id/RegisterButton"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/RegisterButton" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

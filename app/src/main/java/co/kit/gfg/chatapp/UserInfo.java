@@ -4,7 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.util.Log;
+
+import co.kit.gfg.chatapp.ui.acitivity.LoginActivity;
 
 public class UserInfo {
 
@@ -51,7 +52,7 @@ public class UserInfo {
         sharedPreferencesEditor.clear();
         sharedPreferencesEditor.apply();
         //Starting Login Activity
-        Intent intent = new Intent(context,LoginActivity.class);
+        Intent intent = new Intent(context, LoginActivity.class);
         context.startActivity(intent);
 
      }

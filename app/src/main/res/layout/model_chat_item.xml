@@ -12,15 +12,20 @@
         android:background="@drawable/chat_message_guest"
         android:layout_gravity="end"
         >
+
         <TextView
             android:id="@+id/txt_chatItem_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:textColor="@color/black"
-            android:padding="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins"
             android:maxEms="8"
-            />
+            android:padding="2dp"
+            android:textColor="#5B37B7"
+            android:textSize="16sp" />
         <TextView
             android:id="@+id/txt_chatItem_time"
             android:layout_width="wrap_content"

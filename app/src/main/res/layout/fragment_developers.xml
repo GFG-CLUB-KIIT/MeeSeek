@@ -4,30 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DevelopersFragment">
+    tools:context=".ui.DevelopersFragment">
+
    <TextView
        android:id="@+id/title"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:textSize="20dp"
-       android:text="GFG KIIT"
-       android:textStyle="bold"
-       android:paddingTop="10dp"
-       android:paddingLeft="8dp"
-       android:paddingRight="8dp"
        android:layout_centerHorizontal="true"
-      />
+       android:fontFamily="@font/poppins_semibold"
+       android:paddingLeft="8dp"
+       android:paddingTop="10dp"
+       android:paddingRight="8dp"
+       android:text="GFG KIIT"
+       android:textSize="20dp"
+       android:textStyle="bold" />
+
    <TextView
        android:id="@+id/body"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:textSize="14dp"
-      android:text="@string/about_us"
-      android:layout_below="@+id/title"
+       android:layout_below="@+id/title"
+       android:fontFamily="@font/poppins"
+       android:paddingLeft="8dp"
        android:paddingTop="15dp"
        android:paddingBottom="15dp"
-       android:paddingLeft="8dp"
-      />
+       android:text="@string/about_us"
+       android:textSize="14dp" />
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/developers_recyclerView"
        android:layout_width="match_parent"

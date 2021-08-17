@@ -4,23 +4,23 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
     <Button
         android:id="@+id/btn_chatF_connectionState"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/poppins_semibold"
         android:gravity="center"
         android:text="@string/title_not_connected"
-        android:background="@drawable/button_rounded"
-        android:fontFamily="sans-serif-condensed-medium"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="15dp"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
         android:visibility="visible"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/frm_chatF_chatItems"
@@ -85,12 +85,13 @@
             android:background="@drawable/ic_circular_image"
             >
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_send"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_send" />
+                android:background="@drawable/ic_send"
+                android:backgroundTint="#fff"/>
 
         </FrameLayout>
 

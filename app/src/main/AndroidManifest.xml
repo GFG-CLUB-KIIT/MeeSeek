@@ -12,14 +12,14 @@
     <application
         android:name=".application.BaseApplication"
         android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:hardwareAccelerated="false"
         android:largeHeap="true"
+        android:label="@string/app_name"
         android:theme="@style/Theme.Bluethoothbasedaudiostreamingandchatingapp">
 
         <activity
-            android:name=".Splash"
+            android:name=".ui.acitivity.Splash"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,10 +28,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ui.acitivity.RegisterActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.acitivity.MainActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,8 +40,12 @@
             </intent-filter>-->
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.acitivity.LoginActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
