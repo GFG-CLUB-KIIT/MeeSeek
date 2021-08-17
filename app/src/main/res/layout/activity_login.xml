@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/authenticationbackground"
-    tools:context=".LoginActivity">
+    tools:context=".ui.acitivity.LoginActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,40 +18,46 @@
 
         android:background="@drawable/userauthenticationlayout"
         android:layout_marginTop="150dp">
+
         <TextView
             android:id="@+id/loginTextview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
             android:text="LOGIN"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:textColor="#5B37B7"
             android:textSize="30sp"
-
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/LoginBluetoothTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bluetooth Name"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="60dp"
-            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:text="Bluetooth Name"
             android:textColor="#5B37B7"
+            android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/loginTextview"/>
+            app:layout_constraintTop_toBottomOf="@id/loginTextview" />
+
         <AutoCompleteTextView
             android:id="@+id/login_bluetooth_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:backgroundTint="#5B37B7"
-           android:layout_marginStart="60dp"
+            android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:backgroundTint="#5B37B7"
+            android:fontFamily="@font/poppins"
+            android:maxLines="1"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/LoginBluetoothTextView" />
 
 
@@ -59,34 +65,40 @@
             android:id="@+id/LoginUsernameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#5B37B7"
-            android:text="Username"
             android:layout_marginStart="60dp"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins"
+            android:text="Username"
+            android:textColor="#5B37B7"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_bluetooth_name"/>
+            app:layout_constraintTop_toBottomOf="@id/login_bluetooth_name" />
+
         <AutoCompleteTextView
             android:id="@+id/login_Username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:layout_marginStart="60dp"
+            android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="#5B37B7"
-            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/poppins"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/LoginUsernameTextView" />
+
         <TextView
             android:id="@+id/LoginPasswordTextview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#5B37B7"
-            android:text="Password"
             android:layout_marginStart="60dp"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins"
+            android:text="Password"
+            android:textColor="#5B37B7"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_Username"/>
+            app:layout_constraintTop_toBottomOf="@id/login_Username" />
+
         <AutoCompleteTextView
             android:id="@+id/login_password"
             android:layout_width="match_parent"
@@ -94,8 +106,9 @@
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="#5B37B7"
-            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/poppins"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/LoginPasswordTextview" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -103,22 +116,25 @@
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/login_btn_bg"
+            android:fontFamily="@font/poppins_semibold"
             android:text="LOGIN"
             android:textColor="@color/white"
-            android:background="@drawable/login_btn_bg"
-            app:layout_constraintTop_toBottomOf="@id/login_password"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/login_password" />
+
         <TextView
             android:id="@+id/SwipeRightToLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
             android:text="Swipe Left to Register"
             android:textColor="#5B37B7"
-            android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@id/LoginButton"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/LoginButton" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

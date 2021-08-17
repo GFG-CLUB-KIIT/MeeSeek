@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".ui.acitivity.MainActivity"
     android:id="@+id/drawerLayout">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,18 +28,19 @@
                 android:layout_width="24dp"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/menu_icon"
+                android:src="@drawable/ic_menu"
                 app:tint="@color/white"/>
 
             <TextView
+                android:id="@+id/textTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textTitle"
                 android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_semibold"
                 android:text="@string/app_name"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <fragment
@@ -61,6 +62,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/rounded"
+            android:theme="@style/Widget.BottomNavigationView"
             app:menu="@menu/bottom_menu"/>
 
 
@@ -73,6 +76,7 @@
         app:headerLayout="@layout/layout_navigation_header"
         app:menu="@menu/navigation_menu"
         android:background="@color/drawer"
+        app:itemTextColor="#fff"
         android:layout_gravity="start"
         />
 

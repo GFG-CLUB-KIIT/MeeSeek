@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginBottom="57dp"
     android:background="#DBDAF1"
-    tools:context=".SearchFragment">
+    tools:context=".ui.SearchFragment">
 
 
 
@@ -35,16 +35,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:src="@drawable/pairedbutton"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
                 android:text="Paired"
+                android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/imageViewPaired"
+                app:layout_constraintEnd_toEndOf="@id/imageViewPaired"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/imageViewPaired"/>
+                app:layout_constraintTop_toBottomOf="@id/imageViewPaired" />
 
 
 
@@ -69,16 +71,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:src="@drawable/scanbutton"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
                 android:text="Scan"
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/imageViewScan"
+                app:layout_constraintEnd_toEndOf="@id/imageViewScan"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/imageViewScan"/>
+                app:layout_constraintTop_toBottomOf="@id/imageViewScan" />
 
 
 

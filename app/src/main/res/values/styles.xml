@@ -25,4 +25,14 @@
         <item name="cornerFamilyTopRight">rounded</item>
     </style>
 
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="Widget.NavDrawer"
+        parent="Widget.Design.NavigationView">
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
 </resources>
