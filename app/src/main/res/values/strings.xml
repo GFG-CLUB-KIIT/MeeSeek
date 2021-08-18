@@ -1,8 +1,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">MeeSeek</string>
+    <string name="app_description">A Bluetooth Chat Application</string>
     <string name="home">Home</string>
     <string name="developers">Developers</string>
-    <string name="about_us">GFG KIIT Chapter is a student driven community.   </string>
+    <string name="about_us">We are a group of enthusiasts working relentlessly day in day out for
+utilising technology for a better cause. We aim to solve real-world
+problems and build products that can impact others. We are putting
+immense efforts into increasing our standards and hope to fulfill our
+dreams encouraging many others to dive deep into technology and bring
+the best out of it making the world a better place.</string>
     <string name="settings">Settings</string>
     <string name="feedback">Feedback</string>
     <string name="rate_us">Rate Us</string>
@@ -53,5 +59,10 @@
 
     <string name="send_your_first_message">Send Your First Message.</string>
     <string name="about">About Us</string>
+
+
+    <!--Hints-->
+    <string name="hints_desc">For connecting to a device and start chatting:</string>
+    <string name="hints_1">Tap on the search icon and then tap on the scan button. it will start scanning for nearby available devices.</string>
 
 </resources>
