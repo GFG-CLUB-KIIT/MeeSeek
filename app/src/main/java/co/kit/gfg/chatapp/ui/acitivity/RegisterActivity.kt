@@ -24,7 +24,9 @@ class RegisterActivity : AppCompatActivity() {
         RegisterButton.setOnClickListener{
             handler.insertUserData(register_bluetooth_name.text.toString(),register_Username.text.toString(),register_password.text.toString())
                 Toast.makeText(this,"Values Inserted", Toast.LENGTH_LONG).show()
-                onBackPressed()
+            //start the activity
+            val intent=Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
         }
         constraintRegisterLayout.setOnTouchListener(object: OnSwipeTouchListener(this@RegisterActivity){
