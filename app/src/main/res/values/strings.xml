@@ -61,8 +61,16 @@ the best out of it making the world a better place.</string>
     <string name="about">About Us</string>
 
 
-    <!--Hints-->
-    <string name="hints_desc">For connecting to a device and start chatting:</string>
-    <string name="hints_1">Tap on the search icon and then tap on the scan button. it will start scanning for nearby available devices.</string>
+    <!--HintsFragment-->
+    <string name="hintStart">For connecting to a device and start chatting:</string>
+    <string name="step1">Tap on the search icon and then tap on the scan button. It will start scanning for nearby available devices</string>
+    <string name="step2">After the search finishes a list of available devices appears, choose a device from the list</string>
+    <string name="step3">If in case it fails to scan a device, then scan and pair to the device manually from the device\'s bluetooth settings.</string>
+    <string name="step4">After the pairing is done, for starting a chat, click on the paired button.</string>
+    <string name="step5">A list of paired devices appears, choose the device from the list  and start chatting.</string>
+
+    <string name="contentHint" >We are a group of enthusiasts working relentlessly day in day out for utilising technology for a better cause. We aim to solve real-world
+        problems and build products that can impact others. We are putting immense efforts into increasing our standards and hope to fulfill our
+        dreams encouraging many others to dive deep into technology and bring the best out of it making the world a better place.</string>
 
 </resources>

@@ -1,26 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HintsFragment"
-    android:background="#DBDAF1">
+    tools:context=".ui.HintsFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hints"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
-            android:padding="32dp"
-            android:text="@string/hints_desc"
-            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/hintStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/hint"
+        android:text="@string/hintStart"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/step1"
+        android:layout_below="@+id/hintStart"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/step1"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        app:drawableStartCompat="@drawable/ic_tick" />
+
+    <TextView
+        android:id="@+id/step2"
+        android:layout_below="@+id/step1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/step2"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        app:drawableStartCompat="@drawable/ic_tick" />
+
+    <TextView
+        android:id="@+id/step3"
+        android:layout_below="@+id/step2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/step3"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        app:drawableStartCompat="@drawable/ic_tick" />
+
+    <TextView
+        android:id="@+id/step4"
+        android:layout_below="@+id/step3"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/step4"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        app:drawableStartCompat="@drawable/ic_tick" />
+
+    <TextView
+        android:id="@+id/step5"
+        android:layout_below="@+id/step4"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/step5"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        app:drawableStartCompat="@drawable/ic_tick" />
 
 
-    </LinearLayout>
 
-</FrameLayout>
+</RelativeLayout>
