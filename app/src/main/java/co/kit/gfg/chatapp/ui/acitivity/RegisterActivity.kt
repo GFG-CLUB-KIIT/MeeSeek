@@ -7,6 +7,8 @@ import android.widget.Toast
 import co.kit.gfg.chatapp.DatabaseHelper
 import co.kit.gfg.chatapp.OnSwipeTouchListener
 import co.kit.gfg.chatapp.R
+import co.kit.gfg.chatapp.UserInfo
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
@@ -23,7 +25,16 @@ class RegisterActivity : AppCompatActivity() {
 
         RegisterButton.setOnClickListener{
             handler.insertUserData(register_bluetooth_name.text.toString(),register_Username.text.toString(),register_password.text.toString())
-                Toast.makeText(this,"Values Inserted", Toast.LENGTH_LONG).show()
+
+         UserInfo.saveDetails(
+                this,
+                register_bluetooth_name.text.toString(),
+                register_Username.text.toString(),
+                register_password.text.toString()
+            )
+            Toast.makeText(this,"Values Inserted", Toast.LENGTH_LONG).show()
+
+
             //start the activity
             val intent=Intent(this, MainActivity::class.java)
             startActivity(intent)
